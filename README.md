@@ -10,8 +10,6 @@ A simple task tracker application built with React, featuring task management, l
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
@@ -32,3 +30,17 @@ This project is a basic task tracker application developed using React. It allow
 
    ```bash
    git clone https://github.com/your-username/react-task-tracker.git
+1. Navigate to the project directory:
+
+   ```bash
+   cd react-task-tracker
+1. Install dependencies:
+
+   ```bash
+   npm install
+
+## Usage
+   
+1. Run the application locally:
+   ```bash
+   npm run dev
