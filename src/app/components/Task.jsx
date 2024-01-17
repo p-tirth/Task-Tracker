@@ -23,10 +23,15 @@ const Task = () => {
         dateAdded: new Date().toLocaleString(),
         completed: false,
       };
-      const newtasks = [...tasks, task];
-      setTasks(newtasks);
+      if(tasks==null){
+        setTasks([task])
+        localStorage.setItem("tasks", JSON.stringify([task]));
+      }else{
+        const newtasks = [...tasks, task];
+        setTasks(newtasks);
+        localStorage.setItem("tasks", JSON.stringify(newtasks));
+      }
       setNewTask("");
-      localStorage.setItem("tasks", JSON.stringify(newtasks));
     }
   };
 
